@@ -1,0 +1,35 @@
+# Allgemeine Einstellungen
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Erstellte DBC files
+*.dbc
+
+# Python spezifische Dateien
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+*.pyproj
+*.log
+
+# Umgebungsspezifische Dateien
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Zip-Dateien
+*.zip

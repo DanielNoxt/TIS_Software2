@@ -1,0 +1,32 @@
+# STM32CubeIDE
+
+# Automatisch generierte SensorInfo.h ignorieren
+/Core/Inc/SensorInfo.h
+
+# Ignore build directories but keep .elf files
+/Debug/*
+/Release/*
+!/Debug/*.elf
+#!/Release/*.elf
+
+# Ignore project settings
+/.settings/
+#/.cproject
+#/.project
+/.mxproject
+/.mxresource
+/STM32CubeIDE
+
+# Ignore launch files (JLink Config)
+#/*.launch
+
+# Temp ExcelFiles
+*~$*.xlsx
+
+# Zip-Dateien
+*.zip
+output.txt
+DDF_STM32F446VET7.bin
+Debug Bootloader+App/
+Debug App only/
+/Release/

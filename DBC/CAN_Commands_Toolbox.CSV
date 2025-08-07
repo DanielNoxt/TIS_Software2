@@ -1,0 +1,20 @@
+Befehlname;Befehl;Parameter Liste;Beschreibung;P1 - Name;P1 - Typ;P1 - Val;P1 - StartByte;P1 - Default;P1 - Min;P1 - Max;P1 - Decimals;P2 - Name;P2 - Typ;P2 - Val;P2 - StartByte;P2 - Default;P2 - Min;P2 - Max;P2 - Decimals;P3 - Name;P3 - Typ;P3 - Val;P3 - StartByte;P3 - Default;P3 - Min;P3 - Max;P3 - Decimals;P4 - Name;P4 - Typ;P4 - Val;P4 - StartByte;P4 - Default;P4 - Min;P4 - Max;P4 - Decimals
+Goto Idle;0x00;None;Stopp, gehe in IDLE Zustand;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Save Settings;0x01;None;Speicher neue Werte;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Set PWM Freq;0x02;Uint8_t Preset[1], Uint8_t Platzhalter[2-3], Float PWM_Freq;Neue PWM Frequenz;Preset;QComboBox;Frequenz 1,Frequenz 2,Frequenz 3;1;;;;;Frequenz;QDoubleSpinBox;float;4;100000;100;15000000;1;;;;;;;;;;;;;;;;
+Set Nr. ADC Values;0x03;Uint8_t Platzhalter[1-3], Uint32_t ADC_Length;Anzahl der ADC-Werte pro Kanal;ADC_Length;QSpinBox;uint32_t;4;1000;10;1000;;;;;;;;;;;;;;;;;;;;;;;;;
+Set CAN_Freq;0x04;Uint8_t CAN_FREQ_Preset;Setze CAN-Frequenz auf vordefinierte Frequenz;CAN_FREQ_Preset;QComboBox;100 kHz,125 kHz,200 kHz,250 kHz,500 kHz,1000 kHz;1;500 kHz;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Lock-In Period;0x05;Uint8_t Platzhalter[1-3], Uint32_t Timing_LockInData;Setzt Lock-In Periode in ms;LockIn Period;QSpinBox;uint32_t;4;20;0;2147483647;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Additional data;0x06;Uint8_t Platzhalter[1-3], Uint32_t Timing_AdditionalData;Setzt AdditionalData Periode in ms;Additional data Period;QSpinBox;uint32_t;4;1000;0;2147483647;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Developer data;0x07;Uint8_t Platzhalter[1-3], Uint32_t Timing_RAWData;Setzt RawData Periode in ms;Developer data Period;QSpinBox;uint32_t;4;60000;0;2147483647;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Gain Phase;0x08;Uint8_t Preset[1], Uint8_t Channel[2], Uint8_t Platzhalter[3], int16_t Gain, Uint16_t Phase;;Preset;QComboBox;Frequenz 1,Frequenz 2,Frequenz 3;1;;;;;Channel;QComboBox;1,2,3,4;2;;;;;Gain;QSpinBox;int16_t;4;1024;-2048;2047;0;Phase;QSpinBox;uint16_t;6;0;0;65536;0
+Factory Reset;0x09;None;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Sweep Parameter;0x0A;Uint8_t Parameter[3];Parameter des Sweeps;Mode (P1);QSpinBox;uint8_t;1;0;0;3;;P2;QSpinBox;uint8_t;2;0;0;10;;P3;QSpinBox;uint8_t;3;0;0;10;;;;;;;;;
+Sweep Start;0x0B;Uint8_t Platzhalter[1-3], float SweepStart;Startwert des Sweeps;Sweep Start;QDoubleSpinBox;float;4;0;-9999999999;9999999999;2;;;;;;;;;;;;;;;;;;;;;;;;
+Sweep Stop;0x0C;Uint8_t Platzhalter[1-3], float SweepStop;Stoppwert des Sweeps;Sweep Stop;QDoubleSpinBox;float;4;0;-9999999999;9999999999;2;;;;;;;;;;;;;;;;;;;;;;;;
+Sweep Stepsize;0x0D;Uint8_t Platzhalter[1-3], float SweepStepSize;Schrittweite des Sweeps, Startet den Sweep;Sweep Stepsize;QDoubleSpinBox;float;4;0;-9999999999;9999999999;2;;;;;;;;;;;;;;;;;;;;;;;;
+SendIDs;0x0E;None;Sende Sensorinfos;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+AutoZero;0x0F;None;Starte AutoZero;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Averages;0x10;Uint8_t Platzhalter[1-3], uint16_t;Setze Anzahl der Mittlungen;Averages;QSpinBox;uint16_t;4;1;1;65535;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Meta data;0x11;Uint8_t Platzhalter[1-3], Uint32_t Timing_MetaData;Setzt MetaData Periode in ms;Meta data Period;QSpinBox;uint32_t;4;300000;0;2147483647;;;;;;;;;;;;;;;;;;;;;;;;;
+Set Modus;0x12;Uint8_t Platzhalter[1-3], uint16_t;Setze Betriebsmodus;Set Mode;QSpinBox;uint16_t;4;0;0;65536;0;;;;;;;;;;;;;;;;;;;;;;;;

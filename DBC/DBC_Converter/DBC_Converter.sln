@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DBC_Converter", "DBC_Converter\DBC_Converter.pyproj", "{308D90DB-5356-439F-B2A9-3E69FC02222D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{308D90DB-5356-439F-B2A9-3E69FC02222D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308D90DB-5356-439F-B2A9-3E69FC02222D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02897E9C-A845-41FD-90D7-761D8D43BB8F}
+	EndGlobalSection
+EndGlobal
